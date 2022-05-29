@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="items__wrapper">
+            <input class="hours" type="text" placeholder="часы">
+            <input class='minutes' type="text" placeholder="минуты">
+            <input class='seconds' type="text" placeholder="секунды">
+
+            <div class="buttons__wrapper">
+                <button class="run">Запустить таймер</button>
+                <button class="pause ">Пауза</button>
+                <button class="next ">Дальше</button>
+                <button class="stop">Обнулить</button>
+            </div>
+        </div>
+        <div class="timer__wrapper">
+            <svg width="220" height="237" xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <circle class="circle_animation2" r="90" cy="95" cx="95" stroke-width="8" stroke="grey" fill="none"/>
+             <circle class="circle_animation" r="90" cy="95" cx="95" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+             
+            </g>
+           </svg>
+            <div class="timer">
+                <span>00:00:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js "></script>
+</body>
+
+</html>
